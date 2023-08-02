@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +28,8 @@ Route::get('/berita', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 });
+
+//Authentication
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest'); 
+Route::post('/login', [LoginController::class, 'authenticate']); 
+Route::post('/logout', [LoginController::class, 'logout']); 
