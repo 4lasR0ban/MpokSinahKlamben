@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardUserController;
+use App\Http\Controllers\DashboardPostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +36,12 @@ Route::get('/kontak', function () {
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest'); 
 Route::post('/login', [LoginController::class, 'authenticate']); 
 Route::post('/logout', [LoginController::class, 'logout']); 
+
+//Dashboard
+Route::get('/admin', [DashboardController::class, 'index'])->middleware('auth');
+
+//User
+Route::resource('/admin/users', DashboardUserController::class)->except('show')->middleware('auth');
+
+//Post
+Route::resource('/admin/posts', DashboardPostController::class)->middleware('auth');
