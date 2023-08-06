@@ -134,7 +134,7 @@
                     </li>
 
                     <li class="sidebar-item {{ $active == 'dash_events' ? 'active' : '' }}">
-                        <a href="/admin/posts" class='sidebar-link'>
+                        <a href="/admin/events" class='sidebar-link'>
                             <i class="bi bi-person-plus"></i>
                             <span>Event</span>
                         </a>

@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardPostController;
+use App\Http\Controllers\DashboardEventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,3 +46,6 @@ Route::resource('/admin/users', DashboardUserController::class)->except('show')-
 
 //Post
 Route::resource('/admin/posts', DashboardPostController::class)->middleware('auth');
+
+//Event
+Route::resource('/admin/events', DashboardEventController::class)->middleware('auth');
