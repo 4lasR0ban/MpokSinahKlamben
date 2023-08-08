@@ -6,6 +6,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardPostController;
 use App\Http\Controllers\DashboardEventController;
+use App\Http\Controllers\DashboardUmkmController;
+use App\Http\Controllers\DashboardUmkmImageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,3 +51,9 @@ Route::resource('/admin/posts', DashboardPostController::class)->middleware('aut
 
 //Event
 Route::resource('/admin/events', DashboardEventController::class)->middleware('auth');
+
+//Umkm
+Route::resource('/admin/umkms', DashboardUmkmController::class)->middleware('auth');
+
+//UmkmImage
+Route::resource('/admin/umkmImages', DashboardUmkmImageController::class)->middleware('auth');

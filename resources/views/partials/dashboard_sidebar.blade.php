@@ -139,6 +139,14 @@
                             <span>Event</span>
                         </a>
                     </li>
+
+                    <li class="sidebar-title">UMKM</li>
+                    <li class="sidebar-item {{ $active == 'dash_umkms' ? 'active' : '' }}">
+                        <a href="/admin/umkms" class='sidebar-link'>
+                            <i class="bi bi-person-badge"></i>
+                            <span>Daftar UMKM</span>
+                        </a>
+                    </li>
 {{--     
                     <li class="sidebar-title">Jabatan</li>
                     <li class="sidebar-item {{ $active == 'dash_position' ? 'active' : '' }}">
