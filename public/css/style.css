@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF3E41;
+    --primary: #F15A59;
     --secondary: #51CFED;
     --light: #F8F2F0;
     --dark: #060315;
@@ -43,6 +43,10 @@
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
+}
+
+.btn.btn-red {
+    color: #F15A59;
 }
 
 .btn-square {
@@ -164,6 +168,9 @@
 
 /*** Header ***/
 @media (max-width: 768px) {
+    .logo {
+        display:none;
+    }
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
@@ -419,7 +426,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/map.png) center center no-repeat;
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/carousel-3.jpg) center center no-repeat;
     background-size: cover;
 }
 

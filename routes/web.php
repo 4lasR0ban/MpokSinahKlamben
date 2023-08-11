@@ -23,8 +23,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/acara', function () {
+    return view('acara');
 });
 
 Route::get('/berita', function () {
@@ -33,6 +33,10 @@ Route::get('/berita', function () {
 
 Route::get('/kontak', function () {
     return view('kontak');
+});
+
+Route::get('/artikel', function () {
+    return view('artikel');
 });
 
 //Authentication

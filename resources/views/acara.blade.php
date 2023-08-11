@@ -1,16 +1,16 @@
 @extends('layouts.main')
 
 @section('container')
-
+    
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Acara</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Berita</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>
                 </ol>
             </nav>
         </div>
@@ -18,11 +18,11 @@
     <!-- Page Header End -->
 
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Berita</h6>
+                <h6 class="text-secondary text-uppercase">Our Services</h6>
                 <h1 class="mb-5">Explore Our Services</h1>
             </div>
             <div class="row g-4">
@@ -90,5 +90,5 @@
         </div>
     </div>
     <!-- Service End -->
-
+        
 @endsection
