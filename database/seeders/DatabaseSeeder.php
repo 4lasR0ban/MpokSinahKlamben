@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Post;
+use App\Models\Event;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,5 +23,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'ardian@gmail.com',
             'password' => bcrypt('password')
         ]);
+
+        Post::factory(20)->create();
+
+        Event::factory(20)->create();
     }
 }

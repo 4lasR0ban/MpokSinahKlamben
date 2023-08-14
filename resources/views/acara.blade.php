@@ -26,17 +26,19 @@
                 <h1 class="mb-5">Explore Our Services</h1>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                @foreach ($events as $event)    
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            </div>
+                            <h4 class="mb-3">{{ $event->title }}</h4>
+                            <p>{{ $event->excerpt }}</p>
+                            <a class="btn-slide mt-2" href="acara/{{ $event->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                         </div>
-                        <h4 class="mb-3">Air Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href="artikel"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                @endforeach
+                {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
@@ -85,6 +87,9 @@
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
                         <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
+                </div> --}}
+                <div class="">
+                    {{ $events->links() }}
                 </div>
             </div>
         </div>

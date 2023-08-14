@@ -8,6 +8,8 @@ use App\Http\Controllers\DashboardPostController;
 use App\Http\Controllers\DashboardEventController;
 use App\Http\Controllers\DashboardUmkmController;
 use App\Http\Controllers\DashboardUmkmImageController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,13 +25,19 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/acara', function () {
-    return view('acara');
-});
+// Route::get('/acara', function () {
+//     return view('acara');
+// });
+Route::get('/acara', [EventController::class, 'index'] );
 
-Route::get('/berita', function () {
-    return view('berita');
-});
+Route::get('acara/{event:id}', [EventController::class, 'show']);
+
+Route::get('/berita', [PostController::class, 'index'] );
+
+Route::get('berita/{post:id}', [PostController::class, 'show']);
+// Route::get('/berita', function () {
+//     return view('berita');
+// });
 
 Route::get('/kontak', function () {
     return view('kontak');
