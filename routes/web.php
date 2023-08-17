@@ -47,6 +47,14 @@ Route::get('/artikel', function () {
     return view('artikel');
 });
 
+Route::get('/umkm', function () {
+    return view('umkm');
+});
+
+Route::get('/namaStan', function () {
+    return view('umkmMore');
+});
+
 //Authentication
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest'); 
 Route::post('/login', [LoginController::class, 'authenticate']); 

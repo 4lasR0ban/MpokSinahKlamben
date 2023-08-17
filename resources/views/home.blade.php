@@ -12,9 +12,21 @@
                             <div class="col-10 col-lg-8">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Mpok Sinah Klamben</h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">#1 Place For You in <span class="text-primary">Mangkubumen</span>, Surakarta</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <button class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" onclick = "scrollTo()">Read More</button>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                <p class="fs-3 fw-medium text-white mb-4 pb-2">Komunitas untuk mewadahi aktivitas ekonomi bagi para pelaku UMKM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="Picture1" style="height: 750px;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Mpok Sinah Klamben</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">#1 Place For You in <span class="text-primary">Mangkubumen</span>, Surakarta</h1>
+                                <p class="fs-3 fw-medium text-white mb-4 pb-2">Tempatnya sangar kesenian dan live music setiap hari</p>
                             </div>
                         </div>
                     </div>
@@ -28,9 +40,7 @@
                             <div class="col-10 col-lg-8">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Mpok Sinah Klamben</h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">#1 Place For You in <span class="text-primary">Mangkubumen</span>, Surakarta</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                <p class="fs-3 fw-medium text-white mb-4 pb-2">Terdapat banyak kuliner persembahan dari warga Mangkubumen</p>
                             </div>
                         </div>
                     </div>
@@ -129,7 +139,7 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
+                    <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
                         </div>
@@ -139,7 +149,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
+                    <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
                         </div>
@@ -149,7 +159,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
+                    <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-3.jpg" alt="">
                         </div>
@@ -159,7 +169,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
+                    <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-4.jpg" alt="">
                         </div>
@@ -169,7 +179,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
+                    <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-5.jpg" alt="">
                         </div>
@@ -179,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
+                    <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-6.jpg" alt="">
                         </div>
@@ -270,7 +280,7 @@
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">UMKM</h6>
+                <h6 class="text-secondary text-uppercase">Usaha Micro Kecil Menengah</h6>
                 <h1 class="mb-5">UMKM Warga Mangkubumen</h1>
             </div>
             <div class="row g-4">

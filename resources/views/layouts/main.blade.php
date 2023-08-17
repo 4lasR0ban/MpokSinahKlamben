@@ -44,7 +44,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="logo mb-2 px-2" style="max-width: 60px;">
+            <img src="img/logo.png" alt="Logo" class="logo mb-2 px-2" style="max-width: 60px;">
             <h2 class="mb-2 text-white">Mpok Sinah Klamben</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -58,7 +58,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="price.html" class="dropdown-item">UMKM</a>
+                        <a href="umkm" class="dropdown-item">UMKM</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                     </div>
@@ -97,11 +97,9 @@
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sasono Krido Mangkubumen, Jl. RM Said 236</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="d-flex align-items-center pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i> </a>
+                        <a class="" href=""><span>@mpoksinahklamben.official</span></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">

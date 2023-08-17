@@ -50,19 +50,17 @@
                                         <h1 class="mb-5">Rekomendasi Terbaru Lainnya</h1>
                                     </div>
                                     <div class="row g-4">
-                                        @foreach ($posts as $post)
-                                            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                                                <div class="service-item p-4">
-                                                    <div class="overflow-hidden mb-4">
-                                                        <img class="img-fluid" src="{{ asset('img/service-1.jpg') }}" alt="">
-                                                    </div>
-                                                    <h4 class="mb-3">{{ $post->title }}</h4>
-                                                    <p>{{ $post->excerpt }}</p>
-                                                    <a class="btn-slide mt-2" href="/berita/{{ $post->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                                        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="service-item p-4">
+                                                <div class="overflow-hidden mb-4">
+                                                    <img class="img-fluid" src="img/service-1.jpg" alt="">
                                                 </div>
+                                                <h4 class="mb-3">Air Freight</h4>
+                                                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                                                <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                                             </div>
-                                        @endforeach
-                                        {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                                             <div class="service-item p-4">
                                                 <div class="overflow-hidden mb-4">
                                                     <img class="img-fluid" src="img/service-2.jpg" alt="">
