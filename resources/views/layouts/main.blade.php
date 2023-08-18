@@ -44,7 +44,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <img src="img/logo.png" alt="Logo" class="logo mb-2 px-2" style="max-width: 60px;">
+            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="logo mb-2 px-2" style="max-width: 60px;">
             <h2 class="mb-2 text-white">Mpok Sinah Klamben</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -53,8 +53,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="/" class="nav-item nav-link">Beranda</a>
-                <a href="acara" class="nav-item nav-link">Acara</a>
-                <a href="berita" class="nav-item nav-link">Berita</a>
+                <a href="/acara" class="nav-item nav-link">Acara</a>
+                <a href="/berita" class="nav-item nav-link">Berita</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
