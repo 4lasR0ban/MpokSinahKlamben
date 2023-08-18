@@ -43,7 +43,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
+        <a href="/" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
             <img src="img/logo.png" alt="Logo" class="logo mb-2 px-2" style="max-width: 60px;">
             <h2 class="mb-2 text-white">Mpok Sinah Klamben</h2>
         </a>
