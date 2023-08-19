@@ -96,7 +96,7 @@
                     <h4 class="text-light mb-4">Address</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sasono Krido Mangkubumen, Jl. RM Said 236</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>mpoksinahklamben@gmail.com</p>
                     <div class="d-flex align-items-center pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i> </a>
                         <a class="" href=""><span>@mpoksinahklamben.official</span></a>

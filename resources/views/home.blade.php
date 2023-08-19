@@ -130,7 +130,7 @@
     <!-- Fact End -->
 
 
-    <!-- Service Start -->
+    <!-- Berita Start -->
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -168,42 +168,17 @@
                         <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4 shadow">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Train Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4 shadow">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Customs Clearance</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4 shadow">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Warehouse Solutions</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row pt-2 pb-2 gy-0">
+                        <a href="/berita" class="fs-5 fw-bold text-end">Berita Lainnya &gt;&gt;</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Berita End -->
 
-    <!-- Service Start -->
+    <!-- Acara Start -->
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -241,47 +216,22 @@
                         <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Train Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Customs Clearance</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Warehouse Solutions</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row pt-2 pb-2 gy-0">
+                        <a href="/acara" class="fs-5 fw-bold text-end">Acara Lainnya &gt;&gt;</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Acara End -->
 
-    <!-- Service Start -->
+    <!-- UMKM Start -->
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase">Usaha Micro Kecil Menengah</h6>
-                <h1 class="mb-5">UMKM Warga Mangkubumen</h1>
+                <h1 class="mb-5">Kuliner Warga Mangkubumen</h1>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -314,47 +264,22 @@
                         <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Train Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Customs Clearance</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Warehouse Solutions</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row pt-2 pb-2 gy-0">
+                        <a href="/acara" class="fs-5 fw-bold text-end">Kuliner Lainnya &gt;&gt;</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- UMKM End -->
 
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase">Our Team</h6>
-                <h1 class="mb-5">Expert Team Members</h1>
+                <h1 class="mb-5">Tim Pengelola</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -362,8 +287,8 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/team-1.jpg" alt="">
                         </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
+                        <h5 class="mb-0">Aris Saputro</h5>
+                        <p>Kepala Pengelola</p>
                         <div class="btn-slide mt-1">
                             <i class="fa fa-share"></i>
                             <span>
@@ -379,8 +304,8 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/team-2.jpg" alt="">
                         </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
+                        <h5 class="mb-0">Vero Bagus Wardana</h5>
+                        <p>Kelompok 15 KKN UNS</p>
                         <div class="btn-slide mt-1">
                             <i class="fa fa-share"></i>
                             <span>
@@ -396,8 +321,8 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/team-3.jpg" alt="">
                         </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
+                        <h5 class="mb-0">M. Hardiansyah</h5>
+                        <p>Kelompok 15 KKN UNS</p>
                         <div class="btn-slide mt-1">
                             <i class="fa fa-share"></i>
                             <span>
@@ -413,8 +338,8 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/team-4.jpg" alt="">
                         </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
+                        <h5 class="mb-0">Mas Nova</h5>
+                        <p>Ketua Karang Taruna</p>
                         <div class="btn-slide mt-1">
                             <i class="fa fa-share"></i>
                             <span>
