@@ -30,7 +30,13 @@
                     <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item p-4">
                             <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
+                                <img class="img-fluid" 
+                                @if ($event->image)
+                                    src="{{ asset($event->image) }}" 
+                                @else
+                                    src="{{ asset('img/service-1.jpg') }}" 
+                                @endif
+                                alt="" style="max-height: 300px; min-height: 299px; object-fit:cover">
                             </div>
                             <h4 class="mb-3">{{ $event->title }}</h4>
                             <p>{{ $event->excerpt }}</p>

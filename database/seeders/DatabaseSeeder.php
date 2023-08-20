@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Post;
 use App\Models\Event;
+use App\Models\Umkm;
 
 class DatabaseSeeder extends Seeder
 {
@@ -27,5 +28,7 @@ class DatabaseSeeder extends Seeder
         Post::factory(20)->create();
 
         Event::factory(20)->create();
+
+        Umkm::factory(20)->create();
     }
 }

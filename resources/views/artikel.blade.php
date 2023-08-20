@@ -26,7 +26,13 @@
                         <article>
                             <div class="col border-bottom">
                                 <div class="row pt-2 pb-2 gy-0 px-auto">
-                                    <img src="{{ asset('img/carousel-1.jpg') }}" class="mx-auto d-block" alt="gambar" style="max-width: 1000px; max-height: 500px;">
+                                    <img 
+                                    @if ($post->image)
+                                        src="{{ asset($post->image) }}"
+                                    @else
+                                        src="{{ asset('img/carousel-1.jpg') }}" 
+                                    @endif
+                                    class="mx-auto d-block" alt="gambar" style="max-width: 1000px; max-height: 500px; object-fit:cover;">
                                 </div>
                                 <div class="row pt-2 pb-2 gy-0">
                                     <h1 class="fw-bold text-center py-2">{{ $post->title }}</h1>

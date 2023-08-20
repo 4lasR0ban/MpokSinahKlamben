@@ -16,8 +16,8 @@
     </div>
     <!-- Page Header End -->
 
-     <!-- Artikel Start -->
-     <div class="container-fluid">
+    <!-- Artikel Start -->
+    <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -25,63 +25,90 @@
                         <article>
                             <div class="col border-bottom">
                                 <div class="row pt-2 pb-2 gy-0 px-auto">
-                                    <img src="img/stan-1.jpg" class="mx-auto d-block" alt="gambar" style="max-width: 750px; max-height: 500px;">
+                                  <img 
+                                  @if ($umkm->image)
+                                    src="{{ asset($umkm->image) }}"
+                                  @else
+                                    src="{{ asset('img/stan-1.jpg') }}" 
+                                  @endif
+                                  class="mx-auto d-block" alt="gambar" style="max-width: 750px; max-height: 500px; object-fit:cover">
                                 </div>
                                 <div class="row pt-2 pb-2 gy-0">
-                                    <h1 class="fw-bold text-center py-2">Gudeg Lezat</h1>
+                                  <h1 class="fw-bold text-center py-2">{{ $umkm->title }}</h1>
                                 </div>
                                 <div class="row pt-2 pb-2 gy-0">
-                                    <p class="fw-light">Deskripsi</p>
+                                  <p class="fw-light">Deskripsi</p>
                                 </div>
                                 <div class="row pt-2 pb-2 gy-0">
-                                <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra, libero a mattis rutrum, turpis metus eleifend orci, sit amet accumsan enim est pellentesque velit. Vivamus purus erat, rhoncus et rutrum non, dictum sed urna. Donec faucibus congue arcu, et varius sem aliquet vel. Duis blandit tristique arcu vel scelerisque.
-                                </p>
+                                  {!! $umkm->body !!}
                                 </div>
                                 <!-- Gallery -->
-<div class="row">
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-    <img
-      src="img/food-1.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
+                                @if($images && count($images) > 0)
+                                  <div class="row">
+                                      @foreach($images as $index => $image)
+                                          @if($index % 2 == 0)
+                                          <div class="col-lg-4 mb-4 mb-lg-0">
+                                          @endif
 
-    <img
-      src="img/food-2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
-    />
-  </div>
+                                              <img
+                                                  @if ($image->image)
+                                                    src="{{ asset($image->image) }}"
+                                                  @else
+                                                    src="{{ asset('img/food-3.jpg') }}"
+                                                  @endif
+                                                  class="w-100 shadow-1-strong rounded mb-4"
+                                                  {{-- alt="{{ $image->alt }}" --}}
+                                              />
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="img/food-3.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
-    />
+                                          @if($index % 2 != 0 || $loop->last)
+                                          </div>
+                                          @endif
+                                      @endforeach
+                                  </div>
+                                @endif
+                                {{-- <div class="row">
+                                  <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <img
+                                      src="{{ asset('img/food-1.jpg') }}"
+                                      class="w-100 shadow-1-strong rounded mb-4"
+                                      alt="Boat on Calm Water"
+                                    />
 
-    <img
-      src="img/food-4.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-  </div>
+                                    <img
+                                      src="{{ asset('img/food-2.jpg') }}"
+                                      class="w-100 shadow-1-strong rounded mb-4"
+                                      alt="Wintry Mountain Landscape"
+                                    />
+                                  </div>
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="img/food-5.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
-    />
+                                  <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <img
+                                      src="{{ asset('img/food-3.jpg') }}"
+                                      class="w-100 shadow-1-strong rounded mb-4"
+                                      alt="Mountains in the Clouds"
+                                    />
 
-    <img
-      src="img/food-6.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
-    />
-  </div>
-</div>
+                                    <img
+                                      src="{{ asset('img/food-4.jpg') }}"
+                                      class="w-100 shadow-1-strong rounded mb-4"
+                                      alt="Boat on Calm Water"
+                                    />
+                                  </div>
+
+                                  <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <img
+                                      src="{{ asset('img/food-5.jpg') }}"
+                                      class="w-100 shadow-1-strong rounded mb-4"
+                                      alt="Waves at Sea"
+                                    />
+
+                                    <img
+                                      src="{{ asset('img/food-6.jpg') }}"
+                                      class="w-100 shadow-1-strong rounded mb-4"
+                                      alt="Yosemite National Park"
+                                    />
+                                  </div>
+                                </div> --}}
 <!-- Gallery -->
                             </div>
                         </article>

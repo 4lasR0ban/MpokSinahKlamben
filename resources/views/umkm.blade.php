@@ -24,17 +24,25 @@
                 <h1 class="mb-5">UMKM Warga Mangkubumen</h1>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                @foreach ($umkms as $umkm)
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid"
+                                @if ($umkm->image)
+                                src="{{ asset($umkm->image) }}" 
+                                @else
+                                    src="{{ asset('img/service-1.jpg') }}" 
+                                @endif
+                                alt="" style="max-height: 300px; min-height: 299px; object-fit:cover">
+                            </div>
+                            <h4 class="mb-3">{{ $umkm->title }}</h4>
+                            <p>{{ $umkm->excerpt }}</p>
+                            <a class="btn-slide mt-2" href="/umkm/{{ $umkm->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                         </div>
-                        <h4 class="mb-3">Air Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href="namaStan"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                @endforeach
+                {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
@@ -83,6 +91,9 @@
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
                         <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
+                </div> --}}
+                <div class="">
+                    {{ $umkms->links() }}
                 </div>
             </div>
         </div>

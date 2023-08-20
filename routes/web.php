@@ -10,6 +10,8 @@ use App\Http\Controllers\DashboardUmkmController;
 use App\Http\Controllers\DashboardUmkmImageController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\UmkmController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +37,10 @@ Route::get('acara/{event:id}', [EventController::class, 'show']);
 Route::get('/berita', [PostController::class, 'index'] );
 
 Route::get('berita/{post:id}', [PostController::class, 'show']);
+
+Route::get('/umkm', [UmkmController::class, 'index'] );
+
+Route::get('umkm/{umkm:id}', [UmkmController::class, 'show']);
 // Route::get('/berita', function () {
 //     return view('berita');
 // });
@@ -47,13 +53,13 @@ Route::get('/artikel', function () {
     return view('artikel');
 });
 
-Route::get('/umkm', function () {
-    return view('umkm');
-});
+// Route::get('/umkm', function () {
+//     return view('umkm');
+// });
 
-Route::get('/namaStan', function () {
-    return view('umkmMore');
-});
+// Route::get('/namaStan', function () {
+//     return view('umkmMore');
+// });
 
 //Authentication
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest'); 
