@@ -138,17 +138,25 @@
                 <h1 class="mb-5">Berita Terbaru Kami</h1>
             </div>
             <div class="row g-4">
+                @foreach ($posts as $item)
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <img class="img-fluid"
+                            @if ($item->image)
+                                src="{{ asset($item->image) }}" 
+                            @else
+                                src="{{ asset('img/service-1.jpg') }}" 
+                            @endif 
+                            alt="" style="max-height: 260px; min-height: 259px; object-fit:cover;">
                         </div>
-                        <h4 class="mb-3">Air Freight</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href="artikel"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <h4 class="mb-3">{{ $item->title }}</h4>
+                        <p>{{ $item->excerpt }}</p>
+                        <a class="btn-slide mt-2" href="/berita/{{ $item->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                @endforeach
+                {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
@@ -167,7 +175,7 @@
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
                         <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <div class="row pt-2 pb-2 gy-0">
                         <a href="/berita" class="fs-5 fw-bold text-end">Berita Lainnya &gt;&gt;</a>
@@ -186,7 +194,25 @@
                 <h1 class="mb-5">Acara Terbaru Kami</h1>
             </div>
             <div class="row g-4">
+                @foreach ($events as $item)
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4 shadow">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid"
+                            @if ($item->image)
+                                src="{{ asset($item->image) }}" 
+                            @else
+                                src="{{ asset('img/service-1.jpg') }}" 
+                            @endif 
+                            alt="" style="max-height: 260px; min-height: 259px; object-fit:cover;">
+                        </div>
+                        <h4 class="mb-3">{{ $item->title }}</h4>
+                        <p>{{ $item->excerpt }}</p>
+                        <a class="btn-slide mt-2" href="/acara/{{ $item->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                @endforeach
+                {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
@@ -215,7 +241,7 @@
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
                         <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <div class="row pt-2 pb-2 gy-0">
                         <a href="/acara" class="fs-5 fw-bold text-end">Acara Lainnya &gt;&gt;</a>
@@ -234,7 +260,25 @@
                 <h1 class="mb-5">Kuliner Warga Mangkubumen</h1>
             </div>
             <div class="row g-4">
+                @foreach ($umkms as $item)
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4 shadow">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid"
+                            @if ($item->image)
+                                src="{{ asset($item->image) }}" 
+                            @else
+                                src="{{ asset('img/service-1.jpg') }}" 
+                            @endif 
+                            alt="" style="max-height: 260px; min-height: 259px; object-fit:cover;">
+                        </div>
+                        <h4 class="mb-3">{{ $item->title }}</h4>
+                        <p>{{ $item->excerpt }}</p>
+                        <a class="btn-slide mt-2" href="/umkm/{{ $item->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                @endforeach
+                {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
@@ -263,7 +307,7 @@
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
                         <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <div class="row pt-2 pb-2 gy-0">
                         <a href="/acara" class="fs-5 fw-bold text-end">Kuliner Lainnya &gt;&gt;</a>

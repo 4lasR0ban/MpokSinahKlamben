@@ -11,6 +11,7 @@ use App\Http\Controllers\DashboardUmkmImageController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\UmkmController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,13 +24,15 @@ use App\Http\Controllers\UmkmController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 // Route::get('/acara', function () {
 //     return view('acara');
 // });
+Route::get('/', [HomeController::class, 'index'] );
+
 Route::get('/acara', [EventController::class, 'index'] );
 
 Route::get('acara/{event:id}', [EventController::class, 'show']);
