@@ -14,6 +14,11 @@ class Umkm extends Model
     protected $guarded = ['id'];
     protected $with = ['images'];
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     public function scopeFilter($query, array $filters)
     {
         // if (isset($filters['search_post']) ? $filters['search_post'] : false) {

@@ -20,9 +20,9 @@
                 </div>
             @endif
             <div class="col-lg-2 col-md-4 col-sm-4 my-3 mx-auto">
-                <img class="img-fluid" src="images/pod-talk-logo.png" alt="">
+                <img class="img-fluid" src="{{ asset('img/logo.png') }}" alt="">
             </div>
-            <h3 class="text-center mb-2">Mpok Sinah Klamben</h3>
+            {{-- <h3 class="text-center mb-2">Mpok Sinah Klamben</h3> --}}
             <div class="col-8 mb-3 mx-auto">
                 <form action="/login" method="POST">
                     @csrf

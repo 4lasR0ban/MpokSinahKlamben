@@ -6,6 +6,7 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class DashboardPostController extends Controller
 {
@@ -54,7 +55,11 @@ class DashboardPostController extends Controller
         }
 
         $validatedData['slug']    = Str::slug($request->title);
+        
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+
+        // Memeriksa keunikan slug
+        $validatedData['slug'] = Validator::make(['slug' => $validatedData['slug']],['slug' => 'required|unique:posts,slug'])->validate()['slug'];
 
         Post::create($validatedData);
 

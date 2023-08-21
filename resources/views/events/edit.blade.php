@@ -10,7 +10,7 @@
         <h3 class="text-center">Update Event</h3>
     </div>
 
-    <form action="/admin/events/{{ $event->id }}" method="post" enctype="multipart/form-data">
+    <form action="/admin/events/{{ $event->slug }}" method="post" enctype="multipart/form-data">
         @method('put')
         @csrf
         <div class="col-lg-10 mx-auto">

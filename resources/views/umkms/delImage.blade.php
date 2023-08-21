@@ -87,7 +87,7 @@
             </section>
 
 
-            <a href="/admin/umkms/{{ $umkm->id }}/edit"><button class="btn btn-outline-warning">
+            <a href="/admin/umkms/{{ $umkm->slug }}/edit"><button class="btn btn-outline-warning">
                 <i class="bi bi-plus-square mr-1"></i>
                 <span>Back</span>
             </button></a>

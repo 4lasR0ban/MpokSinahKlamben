@@ -24,6 +24,14 @@
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase">Our Services</h6>
                 <h1 class="mb-5">Explore Our Services</h1>
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-6">
+                        <form class="d-flex">
+                            <input class="form-control me-2" name="search_event" type="search" placeholder="Cari Acara" aria-label="Search" value="{{ request('search_event') }}">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="row g-4">
                 @foreach ($events as $event)    
@@ -40,7 +48,7 @@
                             </div>
                             <h4 class="mb-3">{{ $event->title }}</h4>
                             <p>{{ $event->excerpt }}</p>
-                            <a class="btn-slide mt-2" href="acara/{{ $event->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                            <a class="btn-slide mt-2" href="acara/{{ $event->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                         </div>
                     </div>
                 @endforeach

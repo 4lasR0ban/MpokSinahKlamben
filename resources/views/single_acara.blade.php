@@ -60,11 +60,17 @@
                                             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                                                 <div class="service-item p-4">
                                                     <div class="overflow-hidden mb-4">
-                                                        <img class="img-fluid" src="{{ asset('img/service-1.jpg') }}" alt="">
+                                                        <img class="img-fluid" 
+                                                        @if ($event->image)
+                                                            src="{{ asset($event->image) }}"
+                                                        @else
+                                                            src="{{ asset('img/service-1.jpg') }}" 
+                                                        @endif
+                                                        alt="" style="max-height: 300px; min-height: 299px; object-fit:cover">
                                                     </div>
                                                     <h4 class="mb-3">{{ $event->title }}</h4>
                                                     <p>{{ $event->excerpt }}</p>
-                                                    <a class="btn-slide mt-2" href="/berita/{{ $event->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                                                    <a class="btn-slide mt-2" href="/berita/{{ $event->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                                                 </div>
                                             </div>
                                         @endforeach

@@ -25,6 +25,14 @@
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase">Berita</h6>
                 <h1 class="mb-5">Explore Our Services</h1>
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-6">
+                        <form class="d-flex">
+                            <input class="form-control me-2" name="search_post" type="search" placeholder="Cari Berita" aria-label="Search" value="{{ request('search_post') }}">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="row g-4">
                 @foreach ($posts as $post)
@@ -41,7 +49,7 @@
                         </div>
                         <h4 class="mb-3">{{ $post->title }}</h4>
                         <p>{{ $post->excerpt }}</p>
-                        <a class="btn-slide mt-2" href="/berita/{{ $post->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <a class="btn-slide mt-2" href="/berita/{{ $post->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
                 {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">

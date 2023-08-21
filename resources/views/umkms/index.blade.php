@@ -53,11 +53,11 @@
                                 <td>{{ $umkm->title }}</td>
                                 <td>{{ $umkm->seller }}</td>
                                 <td>
-                                    <a class="btn btn-outline-info" href="/admin/umkms/{{ $umkm->id }}"><i
+                                    <a class="btn btn-outline-info" href="/admin/umkms/{{ $umkm->slug }}"><i
                                             class="bi bi-eye-fill"></i></a>
-                                    <a class="btn btn-outline-warning" href="/admin/umkms/{{ $umkm->id }}/edit"><i
+                                    <a class="btn btn-outline-warning" href="/admin/umkms/{{ $umkm->slug }}/edit"><i
                                             class="bi bi-pencil-square"></i></a>
-                                    <form action="/admin/umkms/{{ $umkm->id }}" method="POST" class="d-inline">
+                                    <form action="/admin/umkms/{{ $umkm->slug }}" method="POST" class="d-inline">
                                         @method('delete')
                                         @csrf
                                         <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?')">

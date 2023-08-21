@@ -44,8 +44,9 @@ class DashboardUmkmImageController extends Controller
      */
     public function store(Request $request)
     {
-        // $umkm = Umkm::where('id', $request->umkms_id)->first();
+        $umkm = Umkm::where('id', $request->umkms_id)->first();
         $umkms_id = $request->umkms_id; 
+        $umkms_slug = $umkm->slug;
         if ($request->images != null){
             $i = 0;
             foreach($request->images as $key){
@@ -58,7 +59,7 @@ class DashboardUmkmImageController extends Controller
                 $i++;
             }
         }
-        return redirect('/admin/umkms/'.$umkms_id.'/edit')->with('success', 'Images has been add!');
+        return redirect('/admin/umkms/'.$umkms_slug.'/edit')->with('success', 'Images has been add!');
     }
 
     /**
@@ -110,7 +111,8 @@ class DashboardUmkmImageController extends Controller
      */
     public function destroy(UmkmImage $umkmImage)
     {
-        $umkms_id =$umkmImage->umkms_id;
+        $umkm = Umkm::where('id', $umkmImage->umkms_id)->first();
+        $umkms_slug = $umkm->slug;
         if($umkmImage->image){
             Storage::delete($umkmImage->image);
         }
@@ -120,7 +122,7 @@ class DashboardUmkmImageController extends Controller
             return redirect('/admin/umkmImages/'.$umkmImages->id)->with('danger', 'Images has been deleted!');
         }
         else {
-            return redirect('/admin/umkms/'.$umkms_id.'/edit')->with('danger', 'Images has been deleted!');
+            return redirect('/admin/umkms/'.$umkms_slug.'/edit')->with('danger', 'Images has been deleted!');
         }
     }
 }

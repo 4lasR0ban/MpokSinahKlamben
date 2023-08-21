@@ -31,12 +31,12 @@
                     </a>
                 </div>
                 <div class="col-4">
-                    <a href="/admin/umkms/{{ $umkm->id }}/edit" class="btn btn-outline-warning d-flex justify-content-center col-12">
+                    <a href="/admin/umkms/{{ $umkm->slug }}/edit" class="btn btn-outline-warning d-flex justify-content-center col-12">
                         <i class="bi bi-pencil-square mx-2"></i>
                         Edit
                     </a>
                 </div>
-                <form action="/admin/umkms/{{ $umkm->id }}" method="POST" class="d-inline col-4">
+                <form action="/admin/umkms/{{ $umkm->slug }}" method="POST" class="d-inline col-4">
                     @method('delete')
                     @csrf
                     <button class="btn btn-outline-danger d-flex justify-content-center col-12"

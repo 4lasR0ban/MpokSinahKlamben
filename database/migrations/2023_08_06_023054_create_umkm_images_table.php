@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('umkm_images', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->foreignUuid('umkms_id')->constrained('umkms')->onDelete('cascade');
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
         });

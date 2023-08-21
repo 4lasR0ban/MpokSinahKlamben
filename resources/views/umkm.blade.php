@@ -22,6 +22,14 @@
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase">UMKM</h6>
                 <h1 class="mb-5">UMKM Warga Mangkubumen</h1>
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-6">
+                        <form class="d-flex">
+                            <input class="form-control me-2" name="search_umkm" type="search" placeholder="Cari UMKM" aria-label="Search" value="{{ request('search_umkm') }}">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="row g-4">
                 @foreach ($umkms as $umkm)
@@ -38,7 +46,7 @@
                             </div>
                             <h4 class="mb-3">{{ $umkm->title }}</h4>
                             <p>{{ $umkm->excerpt }}</p>
-                            <a class="btn-slide mt-2" href="/umkm/{{ $umkm->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                            <a class="btn-slide mt-2" href="/umkm/{{ $umkm->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                         </div>
                     </div>
                 @endforeach

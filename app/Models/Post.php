@@ -12,6 +12,11 @@ class Post extends Model
 
     protected $guarded = ['id'];
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     public function scopeFilter($query, array $filters)
     {
         // if (isset($filters['search_post']) ? $filters['search_post'] : false) {

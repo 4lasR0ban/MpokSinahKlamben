@@ -51,11 +51,11 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $event->title }}</td>
                                 <td>
-                                    <a class="btn btn-outline-info" href="/admin/events/{{ $event->id }}"><i
+                                    <a class="btn btn-outline-info" href="/admin/events/{{ $event->slug }}"><i
                                             class="bi bi-eye-fill"></i></a>
-                                    <a class="btn btn-outline-warning" href="/admin/events/{{ $event->id }}/edit"><i
+                                    <a class="btn btn-outline-warning" href="/admin/events/{{ $event->slug }}/edit"><i
                                             class="bi bi-pencil-square"></i></a>
-                                    <form action="/admin/events/{{ $event->id }}" method="POST" class="d-inline">
+                                    <form action="/admin/events/{{ $event->slug }}" method="POST" class="d-inline">
                                         @method('delete')
                                         @csrf
                                         <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?')">

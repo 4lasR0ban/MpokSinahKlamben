@@ -7,6 +7,7 @@ use App\Models\UmkmImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class DashboardUmkmController extends Controller
 {
@@ -56,6 +57,9 @@ class DashboardUmkmController extends Controller
 
         $validatedData['slug']    = Str::slug($request->title);
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+
+        // Memeriksa keunikan slug
+        $validatedData['slug'] = Validator::make(['slug' => $validatedData['slug']],['slug' => 'required|unique:umkms,slug'])->validate()['slug'];
 
         Umkm::create($validatedData);
 

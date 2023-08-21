@@ -14,10 +14,15 @@
         @csrf
         <div class="col-lg-10 mx-auto">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control @error('title') is-invalid @enderror" id="title"
+                <input type="text" class="form-control @error('title') is-invalid @enderror @error('slug') is-invalid @enderror" id="title"
                     name='title' placeholder="Masukkan judul" value="{{ old('title') }}" required autofocus>
                 <label for="floatingInput">Nama UMKM</label>
                 @error('title')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+                @error('slug')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
@@ -48,7 +53,7 @@
 
             <div class="mb-3">
                 <label for="summernote" class="form-label">Deskripsi</label>
-                <textarea class="form-control @error('body') is-invalid @enderror" name="body" id="summernote" style="height: 100px"></textarea>
+                <textarea class="form-control @error('body') is-invalid @enderror" name="body" id="summernote" style="height: 100px">{{ old('body') }}</textarea>
                 @error('body')
                     <div class="invalid-feedback">
                         {{ $message }}

@@ -6,6 +6,7 @@ use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class DashboardEventController extends Controller
 {
@@ -54,6 +55,9 @@ class DashboardEventController extends Controller
 
         $validatedData['slug']    = Str::slug($request->title);
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+
+        // Memeriksa keunikan slug
+        $validatedData['slug'] = Validator::make(['slug' => $validatedData['slug']],['slug' => 'required|unique:events,slug'])->validate()['slug'];
 
         Event::create($validatedData);
 

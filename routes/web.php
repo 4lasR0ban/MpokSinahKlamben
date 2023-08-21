@@ -35,15 +35,15 @@ Route::get('/', [HomeController::class, 'index'] );
 
 Route::get('/acara', [EventController::class, 'index'] );
 
-Route::get('acara/{event:id}', [EventController::class, 'show']);
+Route::get('acara/{event:slug}', [EventController::class, 'show']);
 
 Route::get('/berita', [PostController::class, 'index'] );
 
-Route::get('berita/{post:id}', [PostController::class, 'show']);
+Route::get('berita/{post:slug}', [PostController::class, 'show']);
 
 Route::get('/umkm', [UmkmController::class, 'index'] );
 
-Route::get('umkm/{umkm:id}', [UmkmController::class, 'show']);
+Route::get('umkm/{umkm:slug}', [UmkmController::class, 'show']);
 // Route::get('/berita', function () {
 //     return view('berita');
 // });
