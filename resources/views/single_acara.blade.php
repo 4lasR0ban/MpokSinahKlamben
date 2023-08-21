@@ -4,7 +4,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-3" style="margin-bottom: 6rem;">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">{{ $event->title }}</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Acara / Event</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="/">Home</a></li>
