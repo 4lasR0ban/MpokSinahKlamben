@@ -35,7 +35,7 @@ class UmkmController extends Controller
             "active"    => 'umkm',
             "umkm"      => $umkm,
             "images"    => UmkmImage::where('umkms_id', $umkm->id)->get(),
-            "umkms"     => Umkm::latest()->take(3)->get()
+            "umkms"     => Umkm::latest()->where("id", "!=", $umkm->id)->take(3)->get()
         ]);
     }
 }

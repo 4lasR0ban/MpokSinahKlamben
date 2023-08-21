@@ -5,7 +5,7 @@
     <div class="container-fluid p-0 pb-5">
         <div class="owl-carousel header-carousel position-relative mb-5">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-3.jpg" alt="Picture1" style="height: 750px;">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="Picture1" style="height: 750px; object-fit:cover;">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/service-1.jpg" alt="Picture1" style="height: 750px;">
+                <img class="img-fluid" src="img/service-1.jpg" alt="Picture1" style="height: 750px; object-fit:cover;">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="Picture2" style="height: 750px;">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="Picture2" style="height: 750px; object-fit:cover;">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -144,7 +144,7 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid"
                             @if ($item->image)
-                                src="{{ asset($item->image) }}" 
+                                src="{{ asset('storage/'.$item->image) }}" 
                             @else
                                 src="{{ asset('img/service-1.jpg') }}" 
                             @endif 
@@ -152,7 +152,7 @@
                         </div>
                         <h4 class="mb-3">{{ $item->title }}</h4>
                         <p>{{ $item->excerpt }}</p>
-                        <a class="btn-slide mt-2" href="/berita/{{ $item->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <a class="btn-slide mt-2" href="/berita/{{ $item->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
                 @endforeach
@@ -200,7 +200,7 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid"
                             @if ($item->image)
-                                src="{{ asset($item->image) }}" 
+                                src="{{ asset('storage/'.$item->image) }}" 
                             @else
                                 src="{{ asset('img/service-1.jpg') }}" 
                             @endif 
@@ -208,7 +208,7 @@
                         </div>
                         <h4 class="mb-3">{{ $item->title }}</h4>
                         <p>{{ $item->excerpt }}</p>
-                        <a class="btn-slide mt-2" href="/acara/{{ $item->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <a class="btn-slide mt-2" href="/acara/{{ $item->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
                 @endforeach
@@ -266,7 +266,7 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid"
                             @if ($item->image)
-                                src="{{ asset($item->image) }}" 
+                                src="{{ asset('storage/'.$item->image) }}" 
                             @else
                                 src="{{ asset('img/service-1.jpg') }}" 
                             @endif 
@@ -274,7 +274,7 @@
                         </div>
                         <h4 class="mb-3">{{ $item->title }}</h4>
                         <p>{{ $item->excerpt }}</p>
-                        <a class="btn-slide mt-2" href="/umkm/{{ $item->id }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <a class="btn-slide mt-2" href="/umkm/{{ $item->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
                 @endforeach

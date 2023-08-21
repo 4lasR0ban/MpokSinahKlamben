@@ -33,7 +33,7 @@ class PostController extends Controller
             "title"     => 'single post',
             "active"    => 'post',
             "post"      => $post,
-            "posts"     => Post::latest()->take(3)->get()
+            "posts"     => Post::latest()->where("id", "!=", $post->id)->take(3)->get()
         ]);
     }
 }

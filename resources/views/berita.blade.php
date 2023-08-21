@@ -41,7 +41,7 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" 
                             @if ($post->image)
-                                src="{{ asset($post->image) }}" 
+                                src="{{asset('storage/'.$post->image) }}" 
                             @else
                                 src="{{ asset('img/service-1.jpg') }}" 
                             @endif

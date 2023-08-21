@@ -40,7 +40,7 @@
                             <div class="overflow-hidden mb-4">
                                 <img class="img-fluid" 
                                 @if ($event->image)
-                                    src="{{ asset($event->image) }}" 
+                                    src="{{ asset('storage/'.$event->image) }}" 
                                 @else
                                     src="{{ asset('img/service-1.jpg') }}" 
                                 @endif

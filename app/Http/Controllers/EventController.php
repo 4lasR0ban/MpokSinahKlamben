@@ -33,7 +33,7 @@ class EventController extends Controller
             "title"     => 'single event',
             "active"    => 'event',
             "event"      => $event,
-            "events"     => Event::latest()->take(3)->get()
+            "events"     => Event::latest()->where("id", "!=", $event->id)->take(3)->get()
         ]);
     }
 }

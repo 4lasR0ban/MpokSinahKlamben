@@ -54,7 +54,7 @@ class DashboardEventController extends Controller
         }
 
         $validatedData['slug']    = Str::slug($request->title);
-        $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+        $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 50);
 
         // Memeriksa keunikan slug
         $validatedData['slug'] = Validator::make(['slug' => $validatedData['slug']],['slug' => 'required|unique:events,slug'])->validate()['slug'];

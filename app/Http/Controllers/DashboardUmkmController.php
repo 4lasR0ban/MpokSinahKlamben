@@ -138,7 +138,7 @@ class DashboardUmkmController extends Controller
             $validatedData['image'] = $request->file('image')->store('umkm-images');
         }
 
-        $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+        $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 50);
 
         Umkm::where('id', $umkm->id)->update($validatedData);
 

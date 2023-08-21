@@ -27,7 +27,7 @@
                                 <div class="row pt-2 pb-2 gy-0 px-auto">
                                   <img 
                                   @if ($umkm->image)
-                                    src="{{ asset($umkm->image) }}"
+                                    src="{{ asset('storage/'.$umkm->image) }}"
                                   @else
                                     src="{{ asset('img/stan-1.jpg') }}" 
                                   @endif
@@ -52,7 +52,7 @@
 
                                               <img
                                                   @if ($image->image)
-                                                    src="{{ asset($image->image) }}"
+                                                    src="{{ asset('storage/'.$image->image) }}"
                                                   @else
                                                     src="{{ asset('img/food-3.jpg') }}"
                                                   @endif

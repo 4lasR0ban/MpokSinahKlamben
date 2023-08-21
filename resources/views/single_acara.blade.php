@@ -28,7 +28,7 @@
                                 <div class="row pt-2 pb-2 gy-0 px-auto">
                                     <img 
                                     @if ($event->image)
-                                        src="{{ asset($event->image) }}"
+                                        src="{{ asset('storage/'.$event->image) }}"
                                     @else
                                         src="{{ asset('img/carousel-1.jpg') }}" 
                                     @endif
@@ -62,7 +62,7 @@
                                                     <div class="overflow-hidden mb-4">
                                                         <img class="img-fluid" 
                                                         @if ($event->image)
-                                                            src="{{ asset($event->image) }}"
+                                                            src="{{ asset('storage/'.$event->image) }}"
                                                         @else
                                                             src="{{ asset('img/service-1.jpg') }}" 
                                                         @endif

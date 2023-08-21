@@ -38,7 +38,7 @@
                             <div class="overflow-hidden mb-4">
                                 <img class="img-fluid"
                                 @if ($umkm->image)
-                                src="{{ asset($umkm->image) }}" 
+                                src="{{ asset('storage/'.$umkm->image) }}" 
                                 @else
                                     src="{{ asset('img/service-1.jpg') }}" 
                                 @endif
