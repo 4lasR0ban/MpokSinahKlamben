@@ -47,7 +47,10 @@
                                     <p class="fw-light">~ <span>{{ $post->author }}</span> ~</p>
                                 </div>
                             </div>
-
+                        </article>
+                    </div>
+                </div>
+            </div>
                             <!-- Service Start -->
                             <div class="container-xxl py-5">
                                 <div class="container py-5">
@@ -138,10 +141,7 @@
                                 </div>
                             </div>
                             <!-- Service End -->
-                        </article>
-                    </div>
-                </div>
-            </div>
+                        
         </div>
     </div>
     <!-- Artikel End -->

@@ -29,6 +29,17 @@
                 @enderror
             </div>
 
+            <div class="form-group">
+                <label for="published_at">Tanggal Acara</label>
+                <input type="date" class="form-control @error('published_at') is-invalid @enderror"
+                    id="published_at"  name="published_at"
+                    value="{{ old('published_at') }}">
+                @error('published_at')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
             {{-- <div class="form-floating mb-3">
                 <select class="form-select @error('user_id') is-invalid @enderror" name="user_id"
                     aria-label="Floating label select example" required>

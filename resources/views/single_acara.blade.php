@@ -4,11 +4,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-3" style="margin-bottom: 6rem;">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Judul Berita</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">{{ $event->title }}</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="/">Home</a></li>
+                    {{-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> --}}
                     <li class="breadcrumb-item"><a class="text-white" href="/acara">Acara</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">{{ $event->title }}</li>
                 </ol>
@@ -38,21 +38,24 @@
                                     <h1 class="fw-bold text-center py-2">{{ $event->title }}</h1>
                                 </div>
                                 <div class="row pt-2 pb-2 gy-0">
-                                    <p class="fw-light"><i class="fa fa-calendar"></i> <span>{{ $event->created_at->diffForHumans() }}</span></p>
+                                    <p class="fw-light"><i class="fa fa-calendar"></i> <span>{{ $event->published_at }}</span></p>
                                 </div>
                                 <div class="row pt-2 pb-2 gy-0">
-                                {!! $event->body !!}
+                                    {!! $event->body !!}
                                 </div>
                                 {{-- <div class="row pt-4 pb-3 gy-0 text-end">
                                     <p class="fw-light">~ <span>{{ $event->author }}</span> ~</p>
                                 </div> --}}
                             </div>
-
-                            <!-- Service Start -->
+                            
+                        </article>
+                    </div>
+                </div>
+            </div>
                             <div class="container-xxl py-5">
                                 <div class="container py-5">
                                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                                        <h6 class="text-secondary text-uppercase">Berita</h6>
+                                        <h6 class="text-secondary text-uppercase">Acara</h6>
                                         <h1 class="mb-5">Rekomendasi Terbaru Lainnya</h1>
                                     </div>
                                     <div class="row g-4">
@@ -70,7 +73,7 @@
                                                     </div>
                                                     <h4 class="mb-3">{{ $event->title }}</h4>
                                                     <p>{{ $event->excerpt }}</p>
-                                                    <a class="btn-slide mt-2" href="/berita/{{ $event->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                                                    <a class="btn-slide mt-2" href="/acara/{{ $event->slug }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                                                 </div>
                                             </div>
                                         @endforeach
@@ -127,11 +130,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Service End -->
-                        </article>
-                    </div>
-                </div>
-            </div>
+                    
+                
         </div>
     </div>
     <!-- Artikel End -->

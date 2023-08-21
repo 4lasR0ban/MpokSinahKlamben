@@ -25,6 +25,18 @@
                 @enderror
             </div>
 
+            <div class="form-group">
+                <label for="published_at">Tanggal Acara</label>
+                <input type="date" class="form-control @error('published_at') is-invalid @enderror"
+                    id="published_at"  name="published_at"
+                    value="{{ old('published_at', $event->published_at) }}">
+                @error('published_at')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+
             <div class="mb-3">
                 <label for="image" class="form-label">Input image</label>
                 <input type="hidden" name="oldImg" value="{{ $event->image }}">

@@ -47,6 +47,7 @@ class DashboardEventController extends Controller
             'title'         => 'required|min:3|max:255',
             'image'         => 'image|file|max:2048',
             'body'          => 'required',
+            'published_at'  => 'required'
         ]);
 
         if ($request -> file('image')) {
@@ -104,7 +105,8 @@ class DashboardEventController extends Controller
         $rules = [
             'title'         => 'required|min:3|max:255',
             'image'         => 'image|file|max:2048',
-            'body'          => 'required'
+            'body'          => 'required',
+            'published_at'  => 'required'
 
         ];
 
