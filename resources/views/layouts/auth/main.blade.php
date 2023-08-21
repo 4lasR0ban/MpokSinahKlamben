@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pod Talk - Listing Page</title>
+    <title>Login MpokSinahKlamben</title>
+
+    <link href="favicon.ico" rel="icon">
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

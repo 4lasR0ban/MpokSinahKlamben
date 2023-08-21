@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Mazer Admin Dashboard</title>
-
+    <title>Dashboard - Mpok Sinah Klamben</title>
+    <link href="{{ asset('favicon.ico') }}" rel="icon">
     {{-- dont put in bottom. make error in dashboard! --}}
-    <link rel="stylesheet" href="/dist/assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="{{ asset('/dist/assets/css/shared/iconly.css') }}">
 
     {{-- main css --}}
-    <link rel="stylesheet" href="/dist/assets/css/main/app.css">
-    <link rel="stylesheet" href="/dist/assets/css/main/app-dark.css">
-    <link rel="shortcut icon" href="/dist/assets/images/logo/favicon.svg" type="image/x-icon">
-    <link rel="shortcut icon" href="/dist/assets/images/logo/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{{ asset('/dist/assets/css/main/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/dist/assets/css/main/app-dark.css') }}">
+    <link rel="shortcut icon" href="{{ asset('/dist/assets/images/logo/favicon.svg') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('/dist/assets/images/logo/favicon.png') }}" type="image/png">
 
     {{-- datatable css --}}
-    <link rel="stylesheet" href="/dist/assets/css/pages/fontawesome.css">
-    <link rel="stylesheet" href="/dist/assets/extensions/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="/dist/assets/css/pages/datatables.css">
+    <link rel="stylesheet" href="{{ asset('/dist/assets/css/pages/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('/dist/assets/extensions/datatables.net-bs5/css/dataTables.bootstrap5.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/dist/assets/css/pages/datatables.css') }}">
 
     {{-- summernote css --}}
-    <link rel="stylesheet" href="/dist/assets/css/pages/summernote.css">
-    <link rel="stylesheet" href="/dist/assets/extensions/summernote/summernote-lite.css">
+    <link rel="stylesheet" href="{{ asset('/dist/assets/css/pages/summernote.css') }}">
+    <link rel="stylesheet" href="{{ asset('/dist/assets/extensions/summernote/summernote-lite.css') }}">
 
     {{-- Need: Jquery --}}
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
@@ -44,8 +44,8 @@
         </div>
         {{-- End of Container --}}
     </div>
-    <script src="/dist/assets/js/bootstrap.js"></script>
-    <script src="/dist/assets/js/app.js"></script>
+    <script src="{{ asset('/dist/assets/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('/dist/assets/js/app.js') }}"></script>
 
     <script>
         function submit() {
@@ -55,15 +55,15 @@
     </script>
 
     <!-- Need: Apexcharts -->
-    <script src="/dist/assets/extensions/apexcharts/apexcharts.min.js"></script>
+    <script src="{{ asset('/dist/assets/extensions/apexcharts/apexcharts.min.js') }}"></script>
     {{-- <script src="/dist/assets/js/pages/dashboard.js"></script> --}}
 
     {{-- Need: Datatables --}}
     <script src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
-    <script src="/dist/assets/js/pages/datatables.js"></script>
+    <script src="{{ asset('/dist/assets/js/pages/datatables.js') }}"></script>
 
     {{-- Need: Summernote --}}
-    <script src="/dist/assets/extensions/summernote/summernote-lite.min.js"></script>
+    <script src="{{ asset('/dist/assets/extensions/summernote/summernote-lite.min.js') }}"></script>
     {{-- <script src="/dist/assets/js/pages/summernote.js"></script> --}}
 
 </body>
