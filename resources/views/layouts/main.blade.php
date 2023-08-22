@@ -52,18 +52,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="/" class="nav-item nav-link">Beranda</a>
-                <a href="/acara" class="nav-item nav-link">Acara</a>
-                <a href="/berita" class="nav-item nav-link">Berita</a>
-                <div class="nav-item dropdown">
+                <a href="/" class="nav-item nav-link {{ $active == 'home' ? 'active' : '' }}">Beranda</a>
+                <a href="/acara" class="nav-item nav-link {{ $active == 'event' ? 'active' : '' }}">Acara</a>
+                <a href="/berita" class="nav-item nav-link {{ $active == 'post' ? 'active' : '' }}">Berita</a>
+                <a href="/umkm" class="nav-item nav-link {{ $active == 'umkm' ? 'active' : '' }}">UMKM</a>
+                {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="/umkm" class="dropdown-item">UMKM</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                     </div>
-                </div>
-                <a href="kontak" class="nav-item nav-link">Kontak</a>
+                </div> --}}
+                <a href="/kontak" class="nav-item nav-link {{ $active == 'contact' ? 'active' : '' }}">Kontak</a>
             </div>
             <!-- <h4 class="m-0 pe-lg-5 d-none d-lg-block">
             <div class="d-flex">

@@ -21,7 +21,7 @@ class EventController extends Controller
         // }
         return view('acara', [
             "title" => 'All Event ' . $title,
-            "active" => 'all_event',
+            "active" => 'event',
             "events" => Event::latest()->filter(request(['search_event']))->paginate(6)->withQueryString()
         ]);
     }

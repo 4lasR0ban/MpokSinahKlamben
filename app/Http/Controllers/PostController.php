@@ -21,7 +21,7 @@ class PostController extends Controller
         // }
         return view('berita', [
             "title" => 'All Post ' . $title,
-            "active" => 'all_post',
+            "active" => 'post',
             "posts" => Post::latest()->filter(request(['search_post']))->paginate(6)->withQueryString()
         ]);
     }

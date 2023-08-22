@@ -49,12 +49,14 @@ Route::get('umkm/{umkm:slug}', [UmkmController::class, 'show']);
 // });
 
 Route::get('/kontak', function () {
-    return view('kontak');
+    return view('kontak',[
+        "active" => "contact"
+    ]);
 });
 
-Route::get('/artikel', function () {
-    return view('artikel');
-});
+// Route::get('/artikel', function () {
+//     return view('artikel');
+// });
 
 // Route::get('/umkm', function () {
 //     return view('umkm');

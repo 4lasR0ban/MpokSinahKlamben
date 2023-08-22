@@ -21,8 +21,8 @@ class UmkmController extends Controller
         //     $title = 'by ' . $author->name;
         // }
         return view('umkm', [
-            "title" => 'All Event ' . $title,
-            "active" => 'all_event',
+            "title" => 'UMKM',
+            "active" => 'umkm',
             "umkms" => Umkm::latest()->filter(request(['search_umkm']))->paginate(6)->withQueryString()
         ]);
     }

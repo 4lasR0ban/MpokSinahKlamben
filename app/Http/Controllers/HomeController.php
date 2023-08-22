@@ -13,7 +13,7 @@ class HomeController extends Controller
     {
         return view('home', [
             "title"     => 'Home',
-            "active"    => 'Home',
+            "active"    => 'home',
             "events"    => Event::latest()->take(3)->get(),
             "posts"     => Post::latest()->take(3)->get(),
             "umkms"     => Umkm::latest()->take(3)->get(),
