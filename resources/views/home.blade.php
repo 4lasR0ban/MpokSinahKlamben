@@ -142,7 +142,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid"
+                            <img class="d-block mx-auto img-fluid"
                             @if ($item->image)
                                 src="{{ asset('storage/'.$item->image) }}" 
                             @else
@@ -159,7 +159,7 @@
                 {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="d-block mx-auto img-fluid" src="img/service-2.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Ocean Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -169,7 +169,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="d-block mx-auto img-fluid" src="img/service-3.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Road Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -198,7 +198,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid"
+                            <img class="d-block mx-auto img-fluid"
                             @if ($item->image)
                                 src="{{ asset('storage/'.$item->image) }}" 
                             @else
@@ -215,7 +215,7 @@
                 {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <img class="d-block mx-auto img-fluid" src="img/service-1.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Air Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -225,7 +225,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="d-block mx-auto img-fluid" src="img/service-2.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Ocean Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -235,7 +235,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="d-block mx-auto img-fluid" src="img/service-3.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Road Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -264,7 +264,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4 shadow">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid"
+                            <img class="d-block mx-auto img-fluid"
                             @if ($item->image)
                                 src="{{ asset('storage/'.$item->image) }}" 
                             @else
@@ -281,7 +281,7 @@
                 {{-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <img class="d-block mx-auto img-fluid" src="img/service-1.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Air Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -291,7 +291,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="d-block mx-auto img-fluid" src="img/service-2.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Ocean Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -301,7 +301,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="d-block mx-auto img-fluid" src="img/service-3.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Road Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>

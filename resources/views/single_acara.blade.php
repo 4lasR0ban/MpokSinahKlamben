@@ -26,13 +26,15 @@
                         <article>
                             <div class="col border-bottom">
                                 <div class="row pt-2 pb-2 gy-0 px-auto">
-                                    <img 
-                                    @if ($event->image)
-                                        src="{{ asset('storage/'.$event->image) }}"
-                                    @else
-                                        src="{{ asset('img/carousel-1.jpg') }}" 
-                                    @endif
-                                    class="mx-auto d-block" alt="gambar" style="max-width: 1000px; max-height: 500px; object-fit:cover;">
+                                    <div class="container col-md-10">
+                                        <img 
+                                        @if ($event->image)
+                                            src="{{ asset('storage/'.$event->image) }}"
+                                        @else
+                                            src="{{ asset('img/carousel-1.jpg') }}" 
+                                        @endif
+                                        class="d-block mx-auto img-fluid img-thumbnail" alt="gambar">
+                                    </div>
                                 </div>
                                 <div class="row pt-2 pb-2 gy-0">
                                     <h1 class="fw-bold text-center py-2">{{ $event->title }}</h1>

@@ -39,7 +39,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" 
+                            <img class="d-block mx-auto img-fluid" 
                             @if ($post->image)
                                 src="{{asset('storage/'.$post->image) }}" 
                             @else
