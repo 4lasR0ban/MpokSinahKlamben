@@ -12,6 +12,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\UmkmController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,11 +49,13 @@ Route::get('umkm/{umkm:slug}', [UmkmController::class, 'show']);
 //     return view('berita');
 // });
 
-Route::get('/kontak', function () {
-    return view('kontak',[
-        "active" => "contact"
-    ]);
-});
+// Route::get('/kontak', function () {
+//     return view('kontak',[
+//         "active" => "contact"
+//     ]);
+// });
+
+Route::resource('/kontak', ContactController::class)->except('create','show','update','edit','destroy');
 
 // Route::get('/artikel', function () {
 //     return view('artikel');
