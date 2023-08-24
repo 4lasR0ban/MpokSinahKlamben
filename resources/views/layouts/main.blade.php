@@ -117,12 +117,12 @@
                         <div class="col-4 mb-3">
                             <img class="img-fluid" style="aspect-ratio: 3/2; object-fit:contain; min-height:75px; max-height:76px;" src="{{ asset('/img/logo-surakarta.png') }}" alt="">
                         </div>
-                        <div class="col-4 mb-3">
+                        {{-- <div class="col-4 mb-3">
                             <img class="img-fluid" style="aspect-ratio: 3/2; object-fit:contain; min-height:75px; max-height:76px;" src="{{ asset('/img/logo-uns.png') }}" alt="">
                         </div>
                         <div class="col-4 mb-3">
                             <img class="img-fluid" style="aspect-ratio: 3/2; object-fit:contain; min-height:75px; max-height:76px;" src="{{ asset('/img/logo-kampus-merdeka-png.png') }}" alt="">
-                        </div>
+                        </div> --}}
                         <div class="col-4 mb-3">
                             <img class="img-fluid" style="aspect-ratio: 3/2; object-fit:contain; min-height:75px; max-height:76px;" src="{{ asset('/img/logo-kkn.png') }}" alt="">
                         </div>
