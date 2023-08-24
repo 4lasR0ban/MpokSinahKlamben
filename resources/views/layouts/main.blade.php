@@ -97,7 +97,7 @@
                     <h4 class="text-light mb-4">Address</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sasono Krido Mangkubumen, Jl. RM Said 236</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>mpoksinahklamben@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>mpoksinahklamben15@gmail.com</p>
                     <div class="d-flex align-items-center pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i> </a>
                         <a class="" href=""><span>@mpoksinahklamben.official</span></a>
@@ -105,11 +105,28 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">Beranda</a>
-                    <a class="btn btn-link" href="">Acara</a>
-                    <a class="btn btn-link" href="">Berita</a>
-                    <a class="btn btn-link" href="">Kontak</a>
-                    <a class="btn btn-link" href="">UMKM</a>
+                    <a class="btn btn-link" href="/">Beranda</a>
+                    <a class="btn btn-link" href="/acara">Acara</a>
+                    <a class="btn btn-link" href="/berita">Berita</a>
+                    <a class="btn btn-link" href="/kontak">Kontak</a>
+                    <a class="btn btn-link" href="/umkm">UMKM</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Collaboration With</h4>
+                    <div class="row">
+                        <div class="col-4 mb-3">
+                            <img class="img-fluid" style="aspect-ratio: 3/2; object-fit:contain; min-height:75px; max-height:76px;" src="{{ asset('/img/logo-surakarta.png') }}" alt="">
+                        </div>
+                        <div class="col-4 mb-3">
+                            <img class="img-fluid" style="aspect-ratio: 3/2; object-fit:contain; min-height:75px; max-height:76px;" src="{{ asset('/img/logo-uns.png') }}" alt="">
+                        </div>
+                        <div class="col-4 mb-3">
+                            <img class="img-fluid" style="aspect-ratio: 3/2; object-fit:contain; min-height:75px; max-height:76px;" src="{{ asset('/img/logo-kampus-merdeka-png.png') }}" alt="">
+                        </div>
+                        <div class="col-4 mb-3">
+                            <img class="img-fluid" style="aspect-ratio: 3/2; object-fit:contain; min-height:75px; max-height:76px;" src="{{ asset('/img/logo-kkn.png') }}" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
