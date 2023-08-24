@@ -45,7 +45,7 @@ class ContactController extends Controller
         $subject = $request->subject;
         $message = "Nama: $name\n\nEmail: $email\n\nPesan:\n$pesan";
 
-        $subject = urlencode($subject);
+        $subject = str_replace('+', '%20', urlencode($subject));
         $message = str_replace('+', '%20', urlencode($message));
 
         return redirect(url("mailto:$to?subject=$subject&body=$message"));
