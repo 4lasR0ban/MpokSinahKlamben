@@ -411,46 +411,46 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{ asset('img/local-1.png') }}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
+                            <h5 class="mb-1">Rico Ramada</h5>
+                            <p class="m-0">Pengunjung Lokal</p>
                         </div>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Tempat umum yang semula di fungsikan sebagai tempat kegiatan warga. Nah kalau malam hari berfungsi sebagai tempat nongkrong dengan aneka pilihan makanan minuman dengan pilihan harga dari murah hingga diatasnya. Kebersihan bagus. Ada toilet bersih juga. Parkiran motor dan mobil luas di samping ikut bersama halaman sekolah.</p>
                 </div>
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{ asset('img/local-2.png') }}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
+                            <h5 class="mb-1">Yunafa Santya</h5>
+                            <p class="m-0">Pengunjung Lokal</p>
                         </div>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Makannya cukup variatif. Harganya murah, dan juga ada iringan musiknya. Rekomended buat orang tua yg bawa anak kecil.</p>
                 </div>
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{ asset('img/local-3.png') }}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
+                            <h5 class="mb-1">Tommi Jenar</h5>
+                            <p class="m-0">Pengunjung Lokal</p>
                         </div>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Sentral kuliner baru ditengah kota, komplit tenant nya, harganya cukup murah semua. Ada live music hampir setiap hari. Tempat yang oke kalau ingin bawa keluarga terutama anak² kecil. TOP</p>
                 </div>
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{ asset('img/local-4.png') }}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
+                            <h5 class="mb-1">Satria Jaya</h5>
+                            <p class="m-0">Pengunjung Lokal</p>
                         </div>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Tempatnya apik, cantik, asri dan ramah, cocok buat semua umur, seluruh keluarga, muda mudi yang mau malam mingguan dengan dana kecil, ditengah kota dan dejat banyak warung makan...</p>
                 </div>
             </div>
         </div>
